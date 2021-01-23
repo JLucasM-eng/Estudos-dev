@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outras Formatações</title>
+</head>
+<body>
+  <h1>Outras formatações</h1>
+  <h2>Codigo-fonte</h2>
+  <p>Pra trocar a fonte para uma fonte mais legal como essa do exemplo a seguir, use a tag code. O comando <code>document.getElementbyId</code> é um comando de JS. <br> Essa tag não respeita a identação, por exemplo, no codigo desse doc o trecho de python a seguir esta todo bonitinho, mas aqui ta tudo junto:
+  <code>
+    num = int(input("Digite um numero:"))
+    if num % 2 == 0:
+      printf('O numero {num} é par ')
+    else
+      printf('O numero {num} é impar.')
+  </code>
+  <br>
+  Precisamos entao usar tudo isso, ate a propria tag code dentro de uma outra tag pre. Veja no codigo.
+
+  <pre>
+    <code>
+      num = int(input("Digite um numero:"))
+      if num % 2 == 0:
+        printf('O numero {num} é par ')
+      else
+        printf('O numero {num} é impar.')
+    </code>
+  </pre>
+  <br>
+  Essa tag pre respeita tudo q ta dentro dela, todos os espaços e tabs.
+  </p>
+  <h2>Citações</h2>
+  <p>Como diria o pai de um amigo, <q>o computador é um burro muito rapido</q>.</p>
+  <h2>Citações Completas</h2>
+  <p>Voce pode fazer usando a tag blockquote: <blockquote>bla bla bla bla bla bla bla  e dentro da tag, vc pode colocar o link de onde esta o livro pra venda por exemplo, usando o parametro cite.</blockquote></p>
+  <h2>Abreviações</h2>
+  <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+  <h2>Texto invertido</h2>
+  <p>Use a tag bdo. exemplo: <bdo dir="rtl">Estou estudando html.</bdo>. <br>
+  O ltr significa left to righ,</p>
+</body>
+</html>

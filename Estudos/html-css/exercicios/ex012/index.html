@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos com HTML5</title>
+</head>
+<body>
+  <h1>Inserindo vídeos gospedados localmente</h1>
+  <p>Este video esta hospedad no meu próprio servidor.</p>
+  <video src="midia/video.mp4" width="500" controls></video>
+  <p>Mas assim como no audio, é interessante adicionar em todos os tipos, para ser compativel com todos os navegadores.</p>
+  <video width="500" controls>
+    <source src="midia/video.mp4" type="video/mp4">
+    <source src="midia/Video.m4v" type="video/mp4">
+    <source src="midia/Video.webm" type="video/webm">
+    <p>Seu navegador nao tem compatibilidade com reprodução de videos.</p>
+    <!--Dentro da tag video, junto com controls, vc pode usar o comando poster e informar o caminho onde a sua imagem q sera utilizada como capa do video esta. ai fica igual youtube.-->
+  </video>
+</body>
+</html>

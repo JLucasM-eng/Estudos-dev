@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midias em HTML5</title>
+</head>
+<body>
+  <h1>Imagem Dinamica</h1>
+  <p>Tente abrir ese site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+  <picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="Imagens/foto-g.png" alt="imagem flexivel">
+  </picture>
+  <h1>Reproduzindo audios</h1>
+  <p>Vamos aprender a reproduzir audios em HTML5.</p>
+  <audio src="midia/the colonel.mp3" controls loop></audio>
+  <p>Uma forma mais inteligente de adicionar audios é a seguinte (acompanhe no codigo):</p>
+  <audio preload="metadata" controls loop>
+    <source src="midia/the colonel.mp3" type="audio/mpeg">
+      <!-- Para ter a possibilidade de rodar em outros formatos caso o seu navegador nao rode o mp3, coloque embaixo desse jeito (logico q tendo o mesmo audio nos outros formatos)-->
+    <source src="midia/the colonel.ogg" type="audio/ogg">
+    <source src="midia/the colonel.wav" type="audio/wav">
+      <!--Eai coloca uma mensagem caso nao rode em nenhum formato:-->
+      <p>Infelizmente o seu navegador nao consegue reproduzir o audio; <a href="midia/the colonel.mp3">Clique aqui para baixar o audio em mp3</a></p>
+  </audio>
+</body>
+</html>
