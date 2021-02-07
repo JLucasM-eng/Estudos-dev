@@ -33,7 +33,7 @@
           <!--Usando a tag span para usar o texto em linha-->
           <img src="assets/assets/income.svg" alt="imagem-entradas">
         </h3>
-        <p>R$ 5.000,00</p>
+        <p id="incomeDisplay">R$ 5.000,00</p>
 
       </div>
 
@@ -44,7 +44,7 @@
           <!--Usando a tag span para usar o texto em linha-->
           <img src="assets/assets/expense.svg" alt="imagem-saidas">
         </h3>
-        <p>R$ 2.000,00</p>
+        <p id="expenseDisplay">R$ 2.000,00</p>
 
       </div>
 
@@ -55,7 +55,7 @@
           <!--Usando a tag span para usar o texto em linha-->
           <img src="assets/assets/total.svg" alt="imagem-total">
         </h3>
-        <p>R$ 3.000,00</p>
+        <p id="totalDisplay">R$ 3.000,00</p>
 
       </div>
 
@@ -85,24 +85,6 @@
         </thead>
 
         <tbody>
-          <tr>
-            <td class="description">Luz</td>
-            <td class="expense">- R$ 500,00</td>
-            <td class="date">23/01/2021</td>
-            <td><img src="assets/assets/minus.svg" alt="remover transação"></td>
-          </tr>
-          <tr>
-            <td class="description">Criação do website</td>
-            <td class="income"> R$ 5.000,00</td>
-            <td class="date">24/01/2021</td>
-            <td><img src="assets/assets/minus.svg" alt="remover transação"></td>
-          </tr>
-          <tr>
-            <td class="description">Aluguel</td>
-            <td class="expense">- R$ 1.500,00</td>
-            <td class="date">26/01/2021</td>
-            <td><img src="assets/assets/minus.svg" alt="remover transação"></td>
-          </tr>
         </tbody>
       </table>
     </section>
@@ -115,7 +97,7 @@
     <div class="modal">
       <div id="form">
         <h2>Nova Transação</h2>
-        <form action="">
+        <form action="" onsubmit = "Form.submit(event)">
           <div class="input-group">
             <label class="sr-only" for="description">Descrição</label>
             <input type="text" id="description" name="description" placeholder="Descrição" />
@@ -148,21 +130,8 @@
 
   <footer>Finance$</footer>
 
-  <script>
-    const Modal = {
-      open(){
-        //abrir modal
-        //adicionar a classe active ao modal
-        document.querySelector('.modal-overlay').classList.add('active')
-       
-      },
-      close(){
-        //fechar o modal
-        //remover a classe active do modal
-        document.querySelector('.modal-overlay').classList.remove('active')
-      }
-    }
-
+  <script src="script.js">
+    
   </script>
 </body>
 

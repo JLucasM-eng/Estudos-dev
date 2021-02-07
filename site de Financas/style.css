@@ -224,7 +224,7 @@ td.expense {
     align-items: center;/*Alinha verticalmente no centro*/
     justify-content: center;/*Alinha horizontalmente no centro (justifica)*/
 
-    opacity:;
+    opacity:0;
     visibility: hidden;
     z-index: 999;
 
@@ -233,7 +233,7 @@ td.expense {
     
     opacity:1;
     visibility: visible;/*Esses dois termos sao muito legais. Note que la no HTML eu adicionei mais uma classe na div modal-overlay. Dai usando Javascript eu vou poder adcionar ou tirar uma classe daquelas, quando eu clicar no botao. Sem a classe active eu vou colocar outras configurações.*/
-}
+} 
 .modal {
     background: #f0f2f5;
     padding: 2.4rem;
